@@ -1,0 +1,5 @@
++ make tag
+sed -i -e "s/version:.*/version: 3.5.3/" Chart.yaml
+sed -i -e "s|repository: .*|repository: 10.59.253.30:5000\/tedwon\/maven-simplest|" values.yaml
+sed -i -e "s/tag: .*/tag: 3.5.3/" values.yaml
+git add --all
